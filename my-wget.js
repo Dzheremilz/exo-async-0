@@ -16,7 +16,7 @@ const wget = async (url) => {
       console.log(`Success, index.html has been created, size : ${size} bytes`)
     }
   } catch (e) {
-    console.log(e.message)
+    console.error(e.message)
   }
 }
 

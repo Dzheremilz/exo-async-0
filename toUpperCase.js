@@ -6,6 +6,6 @@ const fsPromises = require('fs/promises')
       txt1 = txt1.toUpperCase()
       await fsPromises.writeFile('hello.txt', txt1)
     } catch (e) {
-      console.log(e.message)
+      console.error(e.message)
     }
   })()
